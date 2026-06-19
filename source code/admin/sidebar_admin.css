@@ -1,0 +1,107 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background: #ffffff ;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 0.3s;
+}
+
+/* Tiêu đề */
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+}
+
+/* Danh sách menu */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+/* Menu item */
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+/* Icon */
+.sidebar ul li a i {
+    margin-right: 12px;
+    font-size: 20px;
+    color: #0b799d; /* Màu xanh mặc định */
+    transition: all 0.3s;
+}
+
+/* Hover */
+.sidebar ul li a:hover {
+    background: rgba(11, 121, 157, 0.1); /* Màu xanh nhẹ */
+    color: black;
+    transform: scale(1.05);
+}
+
+
+/* Icon màu trắng khi menu được chọn */
+.sidebar ul li a.active i {
+    color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+    .sidebar ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+.sidebar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3d6b4f;
+    display: block;
+    margin: 10px auto;
+}
+/* Mục menu được chọn */
+.sidebar ul li a.active {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient xanh dương tím */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+

@@ -1,0 +1,127 @@
+/* Tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EEEBE6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #A5CCD3;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Nút đăng xuất */
+.logout-btn {
+    background-color: #73c2cf;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color:#4b7a83;
+}
+
+/* Ô tìm kiếm */
+.search-box {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #EEEBE6; 
+    background-color: #FFF3E0; 
+    border-radius: 8px;
+}
+
+.search-box button {
+    padding: 12px 22px;
+    border: none;
+    background-color: #A5CCD3;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #79b7c2;
+}
+
+/* Bảng sản phẩm */
+.product-list table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list th, .product-list td {
+    border: none;
+    padding: 14px;
+}
+
+.product-list th {
+    background-color:#A5CCD3;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Nút bấm */
+button {
+    background-color: #bdeaf2;
+    color: #333;
+    border-radius: 12px;
+    padding: 14px 22px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #629fa9;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Ô nhập liệu */
+input, select {
+    background-color: #FFF3E0; /* Be nhạt */
+    border: 1px solid #FFE0B2;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #A5CCD3;
+    box-shadow: 0 0 8px #568891;
+}
