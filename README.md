@@ -1,324 +1,58 @@
-\# HHG POS WEBSITE - HỆ THỐNG QUẢN LÝ BÁN HÀNG
+# HHG POS Website
 
+Hệ thống quản lý bán hàng hỗ trợ quản lý sản phẩm, khách hàng, nhân viên, hóa đơn và tồn kho.
 
+## Thành viên
 
-\## Giới thiệu
+* Nguyễn Thị Hương - 52300201
+* Đặng Hân Hân - 52300196
+* Phạm Thị Cẩm Giang - 52300194
 
+## Công nghệ sử dụng
 
+* PHP 8.2+
+* MySQL
+* HTML/CSS/JavaScript
+* Bootstrap
+* XAMPP
 
-HHG POS Website là hệ thống quản lý bán hàng được xây dựng nhằm hỗ trợ quản lý sản phẩm, nhân viên, khách hàng, hóa đơn và các hoạt động bán hàng trong doanh nghiệp.
+## Cài đặt
 
-
-
-\## Thành viên thực hiện
-
-
-
-\* Nguyễn Thị Hương - MSSV: 52300201
-
-\* Đặng Hân Hân - MSSV: 52300196
-
-\* Phạm Thị Cẩm Giang - MSSV: 52300194
-
-
-
-Lớp: 23050401
-
-
-
-Ngành: Mạng máy tính và truyền thông dữ liệu
-
-
-
-\---
-
-
-
-\## Công nghệ sử dụng
-
-
-
-\* PHP 8.2+
-
-\* MySQL
-
-\* HTML/CSS/JavaScript
-
-\* Bootstrap
-
-\* XAMPP
-
-\* Composer
-
-
-
-\---
-
-
-
-\## Yêu cầu hệ thống
-
-
-
-\* XAMPP 8.2 hoặc mới hơn
-
-\* PHP 8.2+
-
-\* MySQL Server
-
-\* Trình duyệt hiện đại (Chrome, Edge, Firefox,...)
-
-
-
-\---
-
-
-
-\## Hướng dẫn cài đặt
-
-
-
-\### 1. Clone dự án
-
-
+1. Clone source code.
+2. Khởi động Apache và MySQL bằng XAMPP.
+3. Import file `database/data.sql`.
+4. Cài đặt thư viện:
 
 ```bash
-
-git clone <repository-url>
-
-```
-
-
-
-\### 2. Khởi động môi trường
-
-
-
-Mở XAMPP và Start:
-
-
-
-\* Apache
-
-\* MySQL
-
-
-
-\### 3. Import cơ sở dữ liệu
-
-
-
-\* Truy cập: http://localhost/phpmyadmin
-
-\* Tạo database
-
-\* Import file:
-
-
-
-```text
-
-database/data.sql
-
-```
-
-
-
-\### 4. Kích hoạt thư viện GD
-
-
-
-Mở file:
-
-
-
-```text
-
-xampp/php/php.ini
-
-```
-
-
-
-Tìm:
-
-
-
-```ini
-
-;extension=gd
-
-```
-
-
-
-Bỏ dấu `;`:
-
-
-
-```ini
-
-extension=gd
-
-```
-
-
-
-Khởi động lại Apache.
-
-
-
-\### 5. Cài đặt thư viện Barcode
-
-
-
-```bash
-
 composer require picqer/php-barcode-generator
-
 ```
 
-
-
-\### 6. Chạy ứng dụng
-
-
+5. Truy cập:
 
 ```text
-
 http://localhost/d-an-cu-i-BaiNop/
-
 ```
 
+## Tài khoản mặc định
 
+### Admin
 
-\---
+* Username: `admin`
+* Password: `admin123`
 
+### Nhân viên
 
+* Username: phần trước dấu `@` của email đăng ký.
+* Mật khẩu mặc định: `52300201`
 
-\## Tài khoản đăng nhập
+## Demo
 
+Video demo:
 
+https://drive.google.com/file/d/1KDD2-Yvb54SUmEHPzGy605Xp4yOa-_uu/view
 
-\### Quản trị viên
+## Ghi chú
 
-
-
-| Tên đăng nhập | Mật khẩu |
-
-| ------------- | -------- |
-
-| admin         | admin123 |
-
-
-
-\### Nhân viên
-
-
-
-\* Username: phần trước dấu @ của email đăng ký
-
-\* Ví dụ:
-
-
-
-```text
-
-nguyen@abc.com
-
-```
-
-
-
-Username:
-
-
-
-```text
-
-nguyen
-
-```
-
-
-
-Mật khẩu mặc định:
-
-
-
-```text
-
-52300201
-
-```
-
-
-
-\---
-
-
-
-\## Chức năng chính
-
-
-
-\* Quản lý sản phẩm
-
-\* Quản lý danh mục
-
-\* Quản lý nhân viên
-
-\* Quản lý khách hàng
-
-\* Quản lý hóa đơn
-
-\* Quản lý tồn kho
-
-\* In mã vạch sản phẩm
-
-\* Phân quyền người dùng
-
-\* Gửi email hỗ trợ
-
-
-
-\---
-
-
-
-\## Video Demo
-
-
-
-https://drive.google.com/file/d/1KDD2-Yvb54SUmEHPzGy605Xp4yOa-\_uu/view
-
-
-
-\---
-
-
-
-\## Lưu ý
-
-
-
-\* Kiểm tra thư mục Spam/Junk nếu không nhận được email.
-
-\* Đổi mật khẩu sau lần đăng nhập đầu tiên.
-
-\* Không đăng nhập tài khoản Admin và Nhân viên trên cùng trình duyệt để tránh xung đột phiên đăng nhập.
-
-
-
-\---
-
-
-
-\## License
-
-
-
-Dự án được thực hiện phục vụ mục đích học tập và nghiên cứu.
-
-
-
+* Kiểm tra thư mục Spam/Junk nếu không nhận được email.
+* Đổi mật khẩu sau lần đăng nhập đầu tiên.
+* Không đăng nhập tài khoản Admin và Nhân viên trên cùng trình duyệt.
